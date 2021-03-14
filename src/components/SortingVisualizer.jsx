@@ -10,10 +10,13 @@ class SortingVisualizer extends React.Component {
         };
     }
 
+
     componentDidMount() {
         this.generateNewRandomArray();
     }
 
+
+    //GENERATES NEW ARRAY WITH RANDOM VALUES
     generateNewRandomArray() {
 
         const arr = [];
@@ -45,7 +48,7 @@ class SortingVisualizer extends React.Component {
 
 export default SortingVisualizer;
 
-
+//HELPER FOR GENERATING RANDOMS
 function randomize(max, min) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
