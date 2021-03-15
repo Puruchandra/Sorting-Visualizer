@@ -1,0 +1,9 @@
+.app-bar {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1em 1em 1em 1em;
+    color: white;
+    background-color: #0E153A;
+    
+}

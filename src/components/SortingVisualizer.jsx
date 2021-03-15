@@ -1,5 +1,8 @@
 import React from 'react';
-import '../css/ComponentCss.css';
+import '../css/component.css';
+import AlgoInformation from './algoinfo';
+import Appbar from './appbar';
+import Bar from './bar';
 
 class SortingVisualizer extends React.Component {
     constructor(props) {
@@ -20,8 +23,8 @@ class SortingVisualizer extends React.Component {
     generateNewRandomArray() {
 
         const arr = [];
-        for (let i = 0; i < 310; i++) {
-            arr.push(randomize(5, 650));
+        for (let i = 0; i < 15; i++) {
+            arr.push(randomize(5, 450));
         }
         this.setState({ unsortedArray: arr });
 
@@ -32,15 +35,20 @@ class SortingVisualizer extends React.Component {
     render() {
         const { unsortedArray } = this.state;
         return (
-            <div className="array-container">
-                {unsortedArray.map((value, idx) => (
-                    <div
-                        className="single-element-bar"
-                        key={idx}
-                        style={{
-                            height: `${value}px`,
-                        }}></div>
-                ))}
+
+            <div>
+                <Appbar></Appbar>
+
+                <div className="array-container" style={{
+                    height: `250px`,
+                }}>
+                    {unsortedArray.map((value, idx) => (
+                        <div><Bar id={idx} value={value}></Bar></div>
+                    ))}
+                </div>
+
+                <AlgoInformation></AlgoInformation>
+
             </div>
         );
     }

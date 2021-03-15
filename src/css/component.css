@@ -1,0 +1,27 @@
+.array-container {
+    /* left: 100px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-end;
+    border-bottom:  0.1em solid #0E153A;
+    margin: 2em 2em 2em 2em;
+    padding: 1em 1em 1em 1em;
+    
+}
+
+.single-element-bar {
+    width: 20px;
+    display: inline-block;
+    margin: 0 .2em;
+    background-color: #E2F3F5;
+
+}
+
+.single-element-bar-top {
+    height: 2px;
+    width: 20px;
+    margin: 0 .2em;
+    background-color: #22D1EE
+}
+
