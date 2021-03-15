@@ -48,7 +48,7 @@ class SortingVisualizer extends React.Component {
                 </div>
 
                 <AlgoInformation></AlgoInformation>
-
+                <hr></hr>
             </div>
         );
     }
